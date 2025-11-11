@@ -1,90 +1,92 @@
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #b2fefa, #0ed2f7);
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
   margin: 0;
   padding: 0;
-  color: #03334f;
+  color: #222;
   min-height: 100vh;
 }
 
 .container {
-  width: 90%;
-  max-width: 1000px;
-  margin: 40px auto;
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(12px);
-  border-radius: 20px;
-  padding: 30px 40px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  animation: fadeIn 0.8s ease-in-out;
+  width: 85%;
+  max-width: 1100px;
+  margin: 50px auto;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  padding: 35px 40px;
+  animation: fadeIn 0.8s ease;
 }
 
 h1 {
   text-align: center;
-  color: #004d61;
-  margin-bottom: 25px;
-  font-size: 28px;
+  color: #1a237e;
+  font-size: 30px;
+  text-transform: uppercase;
   letter-spacing: 1px;
+  margin-bottom: 30px;
+  border-bottom: 4px solid #ffb300;
+  padding-bottom: 10px;
 }
 
+
 .form-card {
-  background: linear-gradient(135deg, #f0fff4, #e0f7fa);
-  padding: 25px;
-  border-radius: 16px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 25px;
+  background-color: #f7f9fc;
+  border-left: 6px solid #1565c0;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(21, 101, 192, 0.1);
+  margin-bottom: 30px;
 }
 
 .form-card h2 {
-  text-align: left;
-  color: #00796b;
-  margin-bottom: 15px;
-  border-left: 5px solid #00796b;
-  padding-left: 10px;
+  color: #1565c0;
+  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .form-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
 .form-row input {
-  flex: 1;
   padding: 10px 12px;
-  border-radius: 10px;
-  border: 1px solid #b2dfdb;
-  background-color: #ffffffc9;
+  border-radius: 8px;
+  border: 1px solid #ccc;
   font-size: 14px;
-  transition: all 0.2s ease-in-out;
+  background-color: #fff;
+  transition: all 0.25s ease;
 }
 
 .form-row input:focus {
-  border-color: #00796b;
+  border-color: #1565c0;
+  box-shadow: 0 0 5px rgba(21, 101, 192, 0.4);
   outline: none;
-  box-shadow: 0 0 6px #4db6ac;
 }
+
 
 .btn {
   border: none;
-  border-radius: 10px;
-  padding: 8px 16px;
-  cursor: pointer;
+  border-radius: 8px;
+  padding: 9px 15px;
   font-weight: 600;
-  letter-spacing: 0.3px;
-  transition: all 0.3s ease;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-simpan {
-  background-color: #0288d1;
-  color: #fff;
+  background-color: #1e88e5;
+  color: white;
 }
 
 .btn-simpan:hover {
-  background-color: #01579b;
-  transform: scale(1.05);
+  background-color: #1565c0;
+  transform: translateY(-2px);
 }
 
 .btn-batal {
@@ -93,63 +95,65 @@ h1 {
 }
 
 .btn-batal:hover {
-  background-color: #c62828;
-  transform: scale(1.05);
+  background-color: #b71c1c;
+  transform: translateY(-2px);
 }
 
 .table-container {
-  margin-top: 30px;
-  background: linear-gradient(135deg, #e0f7fa, #f0f9ff);
-  border-radius: 14px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fdfdfd;
+  border: 2px solid #e3f2fd;
+  border-radius: 12px;
   padding: 20px;
-  overflow-x: auto;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
 }
 
 .kk-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 14px;
-  background-color: white;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .kk-table thead {
-  background: #0077b6;
+  background: #1e88e5;
   color: white;
 }
 
 .kk-table th,
 .kk-table td {
-  padding: 12px 14px;
+  padding: 12px 16px;
   text-align: left;
   border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.kk-table tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
 .kk-table tr:hover {
-  background-color: #e3f2fd;
+  background-color: #fffde7;
   transition: background 0.3s ease;
 }
 
 .btn-edit {
-  background-color: #4caf50;
-  color: white;
-  margin-right: 6px;
+  background-color: #ffb300;
+  color: #fff;
+  margin-right: 8px;
 }
 
 .btn-edit:hover {
-  background-color: #388e3c;
+  background-color: #f57f17;
   transform: scale(1.05);
 }
 
 .btn-delete {
-  background-color: #f44336;
+  background-color: #e53935;
   color: white;
 }
 
 .btn-delete:hover {
-  background-color: #d32f2f;
+  background-color: #b71c1c;
   transform: scale(1.05);
 }
 
@@ -157,11 +161,12 @@ h1 {
 .no-data {
   text-align: center;
   background-color: #fff8e1;
-  border-radius: 12px;
+  border-radius: 10px;
   padding: 25px;
+  margin-top: 20px;
   font-weight: 500;
-  color: #555;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.05);
+  color: #444;
+  border: 1px dashed #ffb300;
 }
 
 @keyframes fadeIn {
