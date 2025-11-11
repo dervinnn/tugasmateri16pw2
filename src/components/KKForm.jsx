@@ -70,7 +70,7 @@ export default function KKForm({ onSave, editing, onCancel }) {
           <input name="provinsi" value={kk.provinsi} onChange={handleChange} placeholder="Provinsi" />
         </div>
 
-        <h3>👨‍👩‍👧‍👦 Anggota Keluarga</h3>
+        <h3> Anggota Keluarga</h3>
         <div className="form-row">
           <input name="nama" value={anggota.nama} onChange={handleAnggotaChange} placeholder="Nama" />
           <input name="nik" value={anggota.nik} onChange={handleAnggotaChange} placeholder="NIK" />
